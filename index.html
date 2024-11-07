@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>片付け 整理 収納|部屋のお掃除お手伝い</title>
+  <meta 
+    name="description" 
+    content="1人で悩んでいませんか？お片付けお手伝いします。整理収納アドバイザーがご自宅へ訪問してご要望等をお聞きし、ご自宅にあった整理収納方法のご提案をします。"
+  />
+  <link rel="stylesheet" href="style.css">
+  <!-- ここでgoogle Fontsを読み込みます -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <!-- ロゴ -->
+    <div id="top">
+      <div>
+        <a href="index.html" id="logo"><img src="images/logo.png" alt="トップページに戻る" width="360px"></a>
+      </div>
+      <div>
+        <div id="phone">
+          <span id="one"><b>📱090-☓☓☓☓-☓☓☓☓</b><br>平日10：00～17：00<br>(一部、長期休暇は除く)</span>
+          <!-- メニーボタン -->
+          <span><img id="menu-sp" src="images/button-mene1.png" alt="ナビゲーションを開く" width="150px" onclick="document.getElementById('nav-sp').style.display='block'"></span>
+        </div>  
+      </div>
+    </div>
+  
+    <!-- スマホ用ナビゲーション -->
+    <nav id="nav-sp">
+      <img id="close" src="images/button-close1.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display='none'">
+      <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display='none'"><img src="images/logo.png" alt="トップページに戻る" width="360px"></a>
+      <a class="menu" href="index.html" onclick="document.getElementById('nav-sp').style.display='none'">Top</a>
+      <a class="menu" href="index.html#backgroundGeometric" onclick="document.getElementById('nav-sp').style.display='none'" >About</a>
+      <a class="menu" href="index.html#backgroundGreen" onclick="document.getElementById('nav-sp').style.display='none'" >Service</a>
+      <a class="menu" href="index.html#backgroundFlower" onclick="document.getElementById('nav-sp').style.display='none'" >Profile</a>
+      <a class="menu" href="index.html#backgroundOrenge" onclick="document.getElementById('nav-sp').style.display='none'" >Plan</a>
+    </nav>
+  </header>
+  <main>
+    <img class="star" src="images/star.png" alt="星の線" >      
+    <!-- メインビジュアル -->
+    <section>
+      <div id="closed">
+        <p>※大変申し訳ございません。只今休業中です。＜再開予定は未定です。></p>
+      </div>
+    </section>
+    <section id="main-visual">
+        <img id="img" src="images/main-image2.png" alt="お片付けで困ってる人/お気軽にご連絡くださいの画像">
+    </section> 
+    <img class="star" src="images/star.png" alt="星の線">
+    <!--  今の生活に満足していますか？ -->
+    <section id="backgroundGeometric">
+      <div id="outerFrame">
+        <div class="border">
+          <h1>今の生活に満足していますか？</h1>
+        </div>
+        <div id="life-top">
+          <div>
+            <img class="right-irasuto" src="images/feeling.png" alt="イラスト（気持ち）" width="250px">
+            <img class="right-words" src="images/feeling-words.png" alt="言葉（気持ち）" width="200px">
+          </div>
+        </div>
+        <div id="life-center">
+          <div>
+            <img class="left-words" src="images/time-words.png" alt="言葉（時間）" width="200px">
+            <img  class="left-irasuto" src="images/time.png" alt="イラスト（時間）" width="350px">
+          </div>
+        </div>
+        <div id="life-under">
+          <div>
+            <!-- <img class="under" src="images/economy2.png" alt="イラスト（経済）" width="350px"> -->
+            
+            <img class="under" src="images/economy.png" alt="イラスト（経済）" width="370px">
+            <img  class="words" src="images/economy-words.png" alt="言葉（経済）" width="200px">
+          </div>
+        </div>
+    </section>
+    <img class="star" src="images/star.png" alt="星の線">
+    <!-- 快適に過ごせるお部屋になったら？ -->
+    <section id="comfortable">
+      <div id="outerFrame">
+        <div class="border">
+          <h1>快適に過ごせるお部屋になったら？</h1>
+        </div>
+        <div id="outer">            
+          <div id="inner">
+            <div id="fee">
+              <img id="arrow-left" src="images/directingArrow.png" alt="右矢印">
+              <img id="feeling" src="images/feeling-design.png" alt="気持ちのイラスト">
+              <img id="arrow-right" src="images/directingArrow.png" alt="左矢印">  
+              <div id="flex-phone">
+                <div class="about-text">
+                  <p>心に余裕ができて以前からしたかった趣味にチャレンジできた。</p>
+                </div>
+                <div class="rightSide">
+                  <img  class="arrow-rightSide" src="images/arrow-rightSide.png" alt="右横矢印">
+                </div>  
+              </div>
+            </div>
+            <div id="time">
+              <img src="images/time-design.png" alt="時間のイラスト">
+              <div id="flex-phone">
+                <div class="about-text">
+                  <p>家事の時間短縮で家族のコミュニケーションが自然と増えた。</p>
+                </div>
+                <div class="rightSide">
+                  <img  class="arrow-rightSide" src="images/arrow-rightSide.png" alt="右横矢印">
+                </div>  
+              </div>  
+            </div>
+            <div id="business">
+                <img src="images/business-design.png" alt="経済のイラスト">        
+                <div id="flex-phone">
+                  <div class="about-text">
+                    <p>無駄な買い物がなくなり貯蓄が増えた。</p>
+                  </div>
+                  <div class="rightSide">
+                  </div>  
+                </div>
+            </div>
+            <div class="under">
+            </div>
+            <div id="arrow-down">
+              <img src="images/directingArrow.png" alt="下矢印">
+            </div>  
+          </div>
+          <div id="upDownArrow">
+            <img src="images/upDownArrow.png" alt="上下矢印" width="100%">
+          </div>          
+        </div>
+      </div>
+    </section>
+    <img class="star" src="images/star.png" alt="星の線">
+    <!-- サービス -->
+    <section id="backgroundGreen">
+      <div id="innerFrame">
+        <div class="border">
+          <h1>サービス</h1>
+        </div>
+        <p id="service">1.まずは、ヒアリングから</p>
+        <div class="afterCleaningUp">
+          <p>お客様の悩みは、それぞれ違います。<br>
+            そのため初めにご要望を詳しくお聞きしております。</p>
+          <ul>
+            <li type="circle">物の出し入れにストレスを感じる</li>
+            <li type="circle">どんどん物を買っていつの間にか収納スペースがいっぱい</li>
+            <li type="circle">どこに何があるか把握できない</li>
+            <li type="circle">家にいても物が多くて安らげない</li>
+            <li type="circle">押し入れをもっとすっきり整理整頓したい</li>
+            <li type="circle">終活のために、部屋の物を減らしたいけど、何処から手をつければいいのかわからない。</li>
+            <li type="circle">整理できてもすぐに散らかってしまう。整理した状態をキープしたい。</li>
+            <li type="circle">いつも時間がなく慌ただしい生活を改善したい</li>
+            <li type="circle">仕事やキャリアアップのための時間を確保したい</li>
+            <li type="circle">このままだと、子供の健康とメンタルが心配</li>
+          </ul>
+          <p>※ヒアリング時に、こんな感じの家具がほしいとご希望をおっしゃっていただければ、サイズ寸法を測ってご提案いたします。</p>
+        </div>
+        <p id="service">2.お片付けは3ステップ</p>
+        <div class="afterCleaningUp">
+          <ul>
+            <li>分別</li>
+          </ul>
+          <p>
+            まずは、物を減らすことからスタートし、いるもの・いらないもの・迷うものを仕分いたします。<br>
+            ※お客様にもよりますが、2年使っていないものは捨てるようにアドバイスさせていただいております。
+          </p>
+          <div id="sorting">
+            <img src="images/sorting.png" alt="いる物/いらない物/迷う物の分別のイラスト" width="100%">
+          </div>
+        </div>
+        <div class="afterCleaningUp">
+          <ul>
+            <li>分類</li>
+          </ul>
+          <p>
+            衣類・食器・日用品・文房具・本・書類・おもちゃ・配線など分類別におまとめいたします。
+          </p>
+          <div id="sorting">
+            <img src="images/classification.png" alt="分類のイラスト" width="100%">
+          </div>
+        </div>
+        <div class="afterCleaningUp">
+          <ul>
+            <li>指定位置を決める</li>
+          </ul>
+          <p>
+            お客様が出し入れしやすい指定場所をご相談の上、決定いたします。
+          </p>
+        </div>
+        <p id="service">3.アフターフォローもしっかりサポート</p>
+        <div class="afterCleaningUp">
+          <p>ちょっと使いにくいなぁ。</p>
+          <p>やっぱり場所がいまいち。</p>
+          <p>すぐに、また散らかってしまうなど。</p>
+          <p>※少しでも気になることはすぐにご相談ください</p>
+        </div>
+      </div>
+    </section>
+    <img class="star" src="images/star.png" alt="星の線">
+    <!-- サービス紹介 -->
+    <section id="backgroundWhite">
+      <div id="innerFrame">
+        <div class="border">
+          <h1>サービス紹介</h1>
+        </div>
+        <p id="service">見た目スッキリ使いやすいクローゼット収納</p>
+        <div class="afterCleaningUp">
+          <p>お客様からのご要望</p>
+          <p>・飲食店掛け持ちで時間がなく整理できない。</p>
+          <p>・出勤前に探し物がなかなか見つからないからバタバタしてしまう。</p>
+          <p>・引っ越し前に少しでも物を減らしたい。</p>
+          <p>・整理が苦手で一人で片づけられない。</p>  
+        </div>
+        <div class="flex">
+          <div class="flexLeft">
+            <div>
+              <img id="before" src="images/before-photo.png" alt="整理前の写真" width="100%">
+            </div>
+            <div>
+              <img class="character" src="images/before1.png" alt="整理前の写真">   
+            </div>
+          </div>
+          <div class="flexRight">
+            <div>
+              <img src="images/after-photo.png" alt="整理前の写真" width="100%">
+            </div>
+            <div>
+              <img class="character" src="images/after1.png" alt="整理前の写真">   
+            </div>
+          </div>
+        </div>
+        <div class="afterCleaningUp">
+          <p>
+            整理について、クローゼットの物を全て取り出し、アドバイザーと一緒に一つずつ必要な物の見直しを行いました。
+            収納方法について、季節ごとに服を分けてから、よく使う服は手に取りやすい場所に配置し、着る頻度の低い服はケースに保管することで、常に着る服が手に取りやすい仕組みを作りました。
+            お客様からは「服であふれていたクローゼットでしたが、見た目がすっきりして気持ちがいい。よく着る服を取り出しやすくなった。」とお喜びいただけました。<br>ご利用いただき誠にありがとうございました。
+          </p>  
+        </div>
+      </div>
+    </section>
+    <img class="star" src="images/star.png" alt="星の線">
+    <!-- プロフィール -->
+    <section id="backgroundFlower">
+      <div id="innerFrame">
+        <div class="borderGray">
+          <h1>プロフィール</h1>
+        </div>
+        <div class="flex">
+          <div class="flex1">
+            <div id="photograph">
+              <img class="profile" src="images/profile-photo.png" alt="プロフェール写真" width="100%">
+            </div>
+            <div id="oneWord">
+              <p>🥀ひとこと</p>
+              <p>私は、面倒くさがりで、物を探すのに時間をかけたくない性格です。だからこそ整理する事で心に余裕がうまれることを多くの人に知ってもらいたいと考えています。
+                整理収納でお悩みのお客様にも、ゆとりのある生活をおくってもらえるようにお手伝いさせていただきたいと思います。
+              </p> 
+            </div> 
+          </div>
+          <div id="profile">
+            <h1>🥀iku☆tidy up</h1>
+            <div>
+              <a href="https://www.instagram.com/mint_prettydog?igsh=ZDE1MjJwcXZuZWRj"><img class="sns-instagram" src="images/sns-Instagram.png" alt="instagram" width="8%"></a>
+            </div>
+            <div>
+              <p>Tel 090-☓☓☓☓-☓☓☓☓</p>
+              <p>和歌山県和歌山市出身です。</p>
+              <p>資格:整理収納アドバイザー1級</p>
+              <p>趣味:</p>
+              <p>・cafe巡り</p>
+              <p>・温泉</p>
+              <p>・ヨガ＆ピラティス</p>
+              <p>・サップ</p>
+              <p>・釣り</p>
+              <p>得意分野：</p>
+              <p>・お金をかけすに家にあるものを上手く活用できます。</p>
+              <p>  その他のことも臨機応変でお手伝いします。：</p>
+              <p>・掃除</p>
+              <p>・洗濯</p>
+              <p>・草むしり</p>
+              <p>・話相手etc….</p>
+            </div>
+          </div>
+        </div>
+        <div class="underline">
+          <p >※お困りのことは、ご相談してください。</p>
+        </div>
+      </div>
+    </section>    
+    <!-- <img class="star" src="images/star.png" alt="星の線"> -->
+    <!-- お片付けプラン -->
+    <section id="backgroundOrenge">
+      <div id="innerFrame">
+        <div class="border">
+          <h1>お片付けプラン</h1>
+        </div>
+        <p id="hpUp">ホームページ立ち上げキャンペーン</p>
+        <div class="flex">
+          <div id="pricingPlans">
+            <p>・初回カウンセリング代　1時間<span id="strikethrough">1,000円～(税込)</span>　➤　<strong>無料</strong></p>
+            <p id="small"><small>※カウンセリング代=ご自宅のお部屋を見させていただきながらお話を伺います。</small></p>
+            <p>・お片付け作業代　1時間<span id="strikethrough">5,000円～(税込)</span>　➤　<strong>3,000～<small>(税込)</small></strong> </p>
+          </div>
+          <div id="limit">
+            <img class="limit" src="images/limit.png" alt="20人限定">
+          </div>
+        </div>
+        <div class="ccomplished">
+          <p>※<strong>20人</strong>達成しだい<b>通常の金額</b>にさせて頂きます。</p>  
+        </div>
+      </div>
+    </section>
+    <img class="star" src="images/star.png" alt="星の線">
+    <!-- Instagram投稿 -->
+    <section id="instagram">
+      <script src="https://static.elfsight.com/platform/platform.js" async></script>
+      <div class="elfsight-app-7a86513b-2e91-4ea3-9e44-a4a29dc9d833" data-elfsight-app-lazy></div>    
+    </section>
+    <img class="star" src="images/star.png" alt="星の線"> 
+  </main>
+  <!-- フッター -->
+  <footer id="footer">
+    <span id="copyright">&copy;Copyright iku☆tidy up.All rights reserved.</span>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

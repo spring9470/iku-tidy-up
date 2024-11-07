@@ -1,0 +1,531 @@
+/* PC、スマホ共通スタイル */
+body {
+  /* ここにgoogle Fontsを指定します */
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,sans-serif;
+  font-family: "Kaisei Opti", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FFF9EE;
+}
+/* ヘッダー */
+#logo{
+  padding: 10px 0 0 20px;
+}
+#phone{
+  text-align: right;
+}
+#menu-sp{
+  display: inline-block;
+  vertical-align: top;
+}
+#phone span{
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+}
+#top{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: row-wrap;
+}
+b{
+  font-size: 20px;
+}
+/* ハンバーガーメニュー */
+#nav-sp{
+  display: none;
+}
+#nav-sp{
+  /* background-color: #f7c584; */
+  background-color: #e4ba9f;
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 100;
+}
+#close{
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+#logo-sp{
+  margin: 10px 0 30px 10px;
+}
+/* アンダーライン */
+a {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color:#f8edaf;
+  transform: translate(-100%, 0);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+  content: "";
+}
+a:hover:after {
+  transform: translate(0, 0);
+}
+/* ナビゲーション */
+#nav-sp > a:link{
+  color: #ffffff;
+}
+#nav-sp > a:visited{
+  color: #ffffff;
+}
+#nav-sp > a:hover{
+  color: #ffffff;
+  /* text-decoration: underline; */
+}
+#nav-sp > a:active{
+  color: #ffffff;
+}
+#nav-sp > .menu{
+  text-decoration: none;
+  display: block;
+  margin: 15px 20px 0 40px;
+  height: 60px;
+  font-size: 38px;
+  background-image: url("images/arrow.png.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+/* メインビジュアル */
+#closed{
+  padding: 10px 0 10px 0;
+  text-align: center;
+  font-size: 24px;
+  /* color: rgb(230, 125, 125); */
+  /* color: #fd8905; */
+  color: rgb(125, 124, 124);
+  
+}
+#img{
+  width: 100%;
+  margin: 20px auto 0 auto;
+}
+#main-visual{
+  padding:  0 20px;
+}
+
+/* 今の生活に満足していますか？ */
+#backgroundGeometric{
+  background: url(images/background1-1.png) no-repeat center center;
+  background-size: cover;
+
+  /* background: url(images/background1-1.png) center center; */
+  /* background-size: contain; */
+}
+#life-top{
+  padding: 70px 150px 0 0;
+  text-align: right;
+}
+.right-words{
+  position: relative;
+  top: -200px;
+  right: 40px;
+}
+#life-center{
+  padding: 30px 0 0 0;
+  text-align: left;
+}
+.left-words{
+  position: relative;
+  top: -200px;
+  left: 40px;
+}
+#life-under{
+  padding: 40px 50px 0 0;
+  text-align: right;
+}
+.words{
+  position: relative;
+  top: -200px;
+  right: 60px;
+}
+
+
+/* 快適に過ごせるお部屋になったら？ */
+#inner > img ,#time > img , #business > img ,#arrow-down > img{
+  width: 100%;
+}
+#comfortable{
+  background-color: rgb(248, 242, 243);
+}
+
+#outerFrame{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 60px 20px;
+}
+#outer{
+  padding: 60px 40px 0 40px;
+}
+.about-text{
+  padding: 20px 0 0 0;
+  text-align: left;
+  width: 15rem;
+  margin: 0 auto;
+}  
+#feeling{
+  width: 45%;
+  margin: 0 auto;
+}
+#fee{
+  text-align: center;
+}
+#time{
+  width: 45%;
+  float: left;
+}
+#business{
+  width: 45%;
+  float: right;
+}
+#arrow-left{
+  transform: rotate(130deg);
+  width: 15%;
+}
+#arrow-right{
+  transform: rotate(-130deg);
+  width: 15%;
+}
+#arrow-down{
+  padding: 20px 0 0 0;
+  width: 15%;
+  margin: 0 auto;
+  clear: both;
+}
+/*================
+パソコン用スタイル 
+=================*/
+@media screen and (min-width: 768px){
+  .arrow-rightSide ,#upDownArrow{
+    display: none;
+  }
+}
+/* サービス */
+#backgroundGreen{
+  background: url(images/background5.png) center center;
+  background-size: contain;
+}
+.afterCleaningUp img{
+  padding: 40px 0 0 0 ;
+  max-width: 500px;
+}
+#sorting{
+  text-align: center;
+}
+ul li{
+  line-height: 1.7;
+}
+/* サービス紹介 */
+#backgroundWhite{
+  background-color: white;
+}
+#service{
+  padding: 40px 0 0 0;
+  font-size: 20px;
+  /* text-decoration: underline; */
+  text-align: left;  
+}
+.afterCleaningUp{
+  /* clear: both; */
+  text-align: left;
+  padding: 10px 0 0 20px;
+}
+.flexLeft{
+  /* float: left; */
+  width: 50%;
+  padding: 20px 20px 0 0 ;
+}
+.flexRight{
+  padding: 20px 0 0 0;
+  /* float: left; */
+  width: 50%;
+}
+.character{
+  width: 25%;
+}
+/* プロフェール */
+#backgroundFlower{
+  background: url('images/background4.png') no-repeat center center;
+  background-size: cover;
+}
+.flex1{
+  /* float: left; */
+  width: 45%;
+  padding: 20px 10px 20px 10px;
+}
+.flex1 img{
+  text-align: center;
+  width: 80%;
+}
+#oneWord{
+  text-align: left;
+}
+#profile{
+  padding: 20px 0 20px 20px;
+  text-align: left;
+  /* float: left; */
+  width: 50%;
+  position: relative;
+}
+.sns-instagram{
+  position: absolute;
+  top: 45px;
+  left: 210px;
+}
+#profile p{
+  padding: 0 0 0 20px;
+}
+.borderGray{
+  background-color: white;
+  max-width: 840px;
+  border:solid 5px #FFA500;
+  outline: solid 5px gray;
+  outline-offset: 5px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+/* お片付けプラン */
+.flex{
+  display: flex;
+  align-items: center;
+}
+#backgroundOrenge{
+  background-color: #f8d79d;
+}
+#innerFrame{
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 60px 20px 60px 20px;
+  text-align: center;
+}
+.border{
+  background-color: white;
+  max-width: 840px;
+  border:solid 5px #FFA500;
+  outline: solid 5px #abf6e3;
+  outline-offset: 5px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#hpUp{
+  padding: 30px 0 0 10px;
+  color: red;
+  font-size: 24px;
+  text-align: left;  
+}
+.ccomplished{
+  padding: 30px 0 0 0;
+  /* clear: both; */
+}
+strong{
+  color: red;
+  font-size: 18px;
+}
+#pricingPlans{
+  text-align: left;
+  /* float: left; */
+  width: 100%;
+}
+#pricingPlans p{
+  padding: 0 0 0 10px;
+}
+p{
+  margin: 0;
+  line-height: 1.6;
+}
+#limit img{
+  padding: 20px 0 0 0;
+  width: 50%;
+}
+#small{
+  margin: 0 0 0 20px;
+  text-decoration: underline wavy rgb(72, 72, 72);
+}
+#strikethrough{
+  text-decoration: line-through 2px red;
+}
+/* フッター */
+footer{
+  margin: 0;
+  padding: 20px 0 20px 0;
+  background-color: #f8d79d;
+  text-align: center;
+}
+.star{
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding: 10px 0 10px 0;
+}
+
+#instagram{
+  padding:  0 20px;
+}
+
+
+
+/*================
+スマートフォン用スタイル 
+=================*/
+@media screen and (max-width: 767px){
+  body{
+    font-size: 24px;
+  }
+  /* ヘッダー */
+  #top{
+    clear: both;
+    display: block;
+  } 
+  b{
+    font-size: 28px;
+  }
+  /* お片付けプラン */
+  strong{
+    font-size: 26px;
+  }
+  #hpUp{
+    font-size: 32px;
+    text-align: center;  
+    padding: 40px 0 30px 0;
+  }
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+  }
+#limit{
+  width: 50%;
+  margin: 0 auto;
+}
+/* プロフェール */
+.flex1{
+  width: 90%;
+  margin: 0 auto;
+  order: 2;
+  padding: 0 0 30px 0;
+}
+#profile{
+  width: 100%;
+  margin: 0 auto;
+  order: 1;
+  position: relative;
+}
+.sns-instagram{
+  position: absolute;
+  top: 60px;
+  left: 300px;
+}
+/* サービス紹介 */
+#service{
+  font-size: 32px;
+  text-align: center;  
+  padding: 40px 0 30px 0;
+}
+.flexLeft{
+  width: 100%;
+}
+.flexRight{
+  width: 100%;
+}
+#before{
+  padding-top: 40px;
+}
+/* 今の生活に満足していますか？ */
+#life-top{
+  padding: 100px 0 0 0;
+  text-align: center;
+}
+.right-irasuto{
+  width:40%;
+}
+.right-words{
+  width: 40%;
+  vertical-align: middle;
+}
+#life-center{
+  padding: 0 0 0 0;
+  text-align: center;
+}
+.left-words{
+  width: 40%;
+  vertical-align: middle;
+}
+.left-irasuto{
+  width: 58%;
+}
+#life-under{
+  padding: 0 0 0 0;
+  text-align: center;
+}
+.under{
+  width: 58%;
+}
+.words{
+  width: 40%;
+  vertical-align: middle;
+}
+/* 快適に過ごせるお部屋になったら？ */
+#arrow-down,#arrow-left,#arrow-right {
+  display: none;
+}
+#outer{
+  display: flex;
+  width: 100%;
+}
+#inner{
+  width: 80%;
+}
+#upDownArrow{
+  width: 10%;
+  position: relative;
+  top: 280px;
+  right: 0; 
+}
+#flex-phone{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+.about-text{
+  margin: 10px 0 0 30px;
+  text-align: left;
+  width: 80%;
+  /* margin: 0 auto; */
+}
+.rightSide{
+  width: 10%;
+}
+#feeling{
+  width: 100%;
+  margin: 0 auto;
+}
+#fee{
+  text-align: center;
+}
+#time{
+  width: 100%;
+  margin: 0 auto;
+}
+#business{
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+}
